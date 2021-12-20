@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | GitHub user search app</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card" id="card">
+    <header id="header">
+      <h1>devfinder</h1>
+      <div class="theme">
+        <p id="themep" value="LIGHT">LIGHT</p>
+        <div class="themelogo">
+          <img src="assets/icon-sun.svg" alt="" onclick=theme() id="img">
+        </div>
+       
+    </div>
+    </header>
+    <div class="search" id="search">
+        <img src="assets/icon-search.svg" alt="">
+      <input type="text" placeholder="Search GitHub username ..." id="pseudogit" class="urlgit">
+      <input type="button" value="Search" onclick=getgit() class="buttongit">
+    </div>
+    <div class="main" id="main">
+      <div class="top">
+        <img src="" alt="" id="logo">
+        <div class="top-mid">
+        <h2 id="pseudo"></h2>
+        <p for="" id="arobase" class="arobase"></p>
+        <p id="bio"></p>
+        <p id="joined"></p>
+      </div>
+      </div>
+      <div class="center" id="center">
+        <ul>
+          <li>Repos</li>
+          <li id="repos" ></li>
+        </ul>
+        <ul>
+          <li>Followers</li>
+          <li id="followers" ></li>
+        </ul>
+        <ul>
+          <li>Following</li>
+          <li id="following" ></li>
+        </ul>
+      </div>
+      <footer>
+        <div class="locationxwebsite">
+        <div class="location">
+            <img src="assets/icon-location.svg" alt=""> 
+        <p id="location"></p>
+      </div>
+      <div class="website">
+        <img src="assets/icon-website.svg" alt="">
+        <p id="website"></p>
+      </div>
+    </div>
+    <div class="twitterxcompany">
+      <div class="twitter">
+        <img src="assets/icon-twitter.svg" alt="">
+        <p id="twitter"></p>
+      </div>
+      <div class="company" class="logoimgfooter">
+        <img src="assets/icon-company.svg" alt=""> 
+        <p id="company"></p>
+      </div>    
+    </div>  
+      </footer>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
